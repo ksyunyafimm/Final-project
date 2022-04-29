@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 import {YoutubeVideoModule} from "./youtube-video/youtube-video.module";
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -13,7 +15,8 @@ import {YoutubeVideoModule} from "./youtube-video/youtube-video.module";
     BrowserModule,
     AppRoutingModule,
     NgxYoutubePlayerModule.forRoot(),
-    YoutubeVideoModule
+    YoutubeVideoModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
