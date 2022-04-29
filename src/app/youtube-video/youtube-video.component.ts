@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { YtPlayerService, PlayerOptions } from 'yt-player-angular';
+import {YtPlayerService, PlayerOptions, StateChange, StateChangeType} from 'yt-player-angular';
 @Component({
   selector: 'app-youtube-video',
   templateUrl: './youtube-video.component.html',
@@ -7,7 +7,12 @@ import { YtPlayerService, PlayerOptions } from 'yt-player-angular';
 })
 export class YoutubeVideoComponent {
 
-  constructor(private ytPlayerService: YtPlayerService ) { }
-
-
+  constructor(private ytPlayerService: YtPlayerService) {
+  }
+ public onClickPlay(): void{
+    this.ytPlayerService.play()
+ }
+  public onStateChange(stateChange: StateChange): void {
+    console.log(`Type: ${StateChangeType[stateChange.type]} || Payload: ${stateChange.payload}`);
+  }
 }

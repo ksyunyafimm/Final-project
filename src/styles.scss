@@ -2,3 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.from-sky-500 {
+  --tw-gradient-from: #0ea5e9;
+  --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to,rgb(14 165 233/0));
+}
+.to-indigo-500 {
+  --tw-gradient-to: #6366f1;
+}
+
