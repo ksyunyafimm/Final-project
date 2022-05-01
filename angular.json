@@ -7,7 +7,8 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": ["./node_modules/ngx-videogular/fonts/videogular.css",
+            "src/styles.scss"]
         },
         "@schematics/angular:application": {
           "strict": true
