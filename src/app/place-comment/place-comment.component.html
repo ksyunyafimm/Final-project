@@ -1,8 +1,12 @@
-<div class="form-container" [formGroup]="form">
+<div class="form-container " [formGroup]="form">
   <div class="field">
-    <label for="name">Название</label>
-    <input formControlName="name" id="name" name="name" type="text" class="input">
+    <label for="name">Ваше имя</label>
+    <input id="name" formControlName="name">
+    <label for="comment">Ваш комментарий</label>
+    <textarea formControlName="comment" id="comment"  class="input"></textarea>
+   <div class="btn-position"> <button class="btn" (click)="onSendButton()" >Отправить</button> </div>
   </div>
-  <iframe width="480" height="360" src="id"></iframe>
+
+
 </div>
 

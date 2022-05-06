@@ -1,0 +1,61 @@
+.close-btn {
+  float: right;
+}
+
+.comments {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 300px;
+  max-width: 100%;
+  min-width: 250px;
+  overflow-y: scroll;
+  background-color: #212121;
+  border-radius: 2px;
+}
+
+.commentsInner {
+  margin: 10px;
+  background-color: hsla(0, 0%, 18%, 1);
+
+}
+.elementsPosition {
+      display: flex;
+      justify-content: right;
+      flex-direction: column;
+      height: 100%;
+      bottom: 25%;
+      right: 0;
+    }
+.comments::-webkit-scrollbar {
+  width: 10px;
+}
+
+.comments::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+.comments::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(90deg, #fd7f34, #bd155b);
+}
+
+.text {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.commentsInner name {
+  font-weight: bold;
+}
+
+
+@media (max-width: 680px) and (min-width: 200px) {
+
+  .text {
+    font-size: 16px;
+  }
+}

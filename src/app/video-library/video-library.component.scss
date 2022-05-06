@@ -1,0 +1,12 @@
+.nameOfVideo{
+  margin: 15px;
+  font-size: 24px;
+  font-family: Cambria ;
+  font-weight: bold;
+}
+@media (max-width: 680px) and (min-width: 200px){
+  .nameOfVideo{
+    font-size: 16px;
+  }
+}
+

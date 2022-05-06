@@ -1,0 +1,7 @@
+<ng-container *ngFor="let item of videoList;let i=index">
+  <div >
+    <h2 class="nameOfVideo" *ngIf="i<15">{{item.name}}</h2>
+    <video *ngIf="i<15" [src]="item.url" [id]="item.id" controls></video>
+    <app-place-comment *ngIf="i<15" [id]="item.id"></app-place-comment>
+  </div>
+</ng-container>

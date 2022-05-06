@@ -1,8 +1,32 @@
-<div class=" bg-gradient-to-r from-sky-500 to-indigo-500">
-<div class="container mx-auto p-8 " >
-  <header class="w-full h-16 text-left bg-gradient-to-l from-sky-500 to-indigo-500
-  border-double border-4 border-indigo-600 rounded-lg text-gray-light text-lg">Video Page</header>
-  <app-youtube-video class=" flex items-center flex-wrap"></app-youtube-video>
-<app-place-comment *ngIf="showVideoService.isShowVideo"></app-place-comment>
-</div>
+<div class="main ">
+  <div class="container mx-auto p-8 ">
+    <header class="header ">
+      <div class="header-display">
+        <p class="contactUs"><i class="fa-solid fa-clapperboard "></i></p>
+        <p class="contactUs" (click)="onClickShowComponent()" (dblclick)="onDblClick()">
+          <i class="fa-solid fa-address-book"></i></p>
+      </div>
+      <ng-container *ngIf="showService.isShowComponent">
+        <p class="contactUsDescription">Contact us @test.test</p>
+      </ng-container>
+    </header>
+    <div class="description">
+      <div class="about">
+      <div><h1><i class="fa-brands fa-youtube fa-2xl">      VideoPage</i></h1></div>
+        <div class="aboutUs"><p>Здесь вы сможете найти видео о различных методах, используемых в <span>Angular</span> и
+        <br>познакомиться с ним немного ближе.
+        <br>Присылайте нам ссылки на видео и мы будем обновлять наш список
+      </p>
+       </div>
+     </div>
+      <img class="img" alt="iconVideo" src="assets/header-preview-icon.png">
+    </div>
+    <div class="content ">
+      <app-video-library class="video-content"></app-video-library>
+      <div><p (click)="onClickShowVideo()" class="showComments"><i class="fa-solid fa-caret-down"></i>        Показать комментарии</p></div>
+      <app-comments-library *ngIf="showVideoService.isShowVideo"></app-comments-library>
+    </div>
+    <footer class="footer"><p>Все материалы были взяты с сайта YouTube.com
+      <br>Moscow 2022 </p></footer>
+  </div>
 </div>

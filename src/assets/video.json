@@ -1,0 +1,7 @@
+{"Videos" :
+[
+  {"url":"/assets/1.mp4","name":"Директива *ngIf","id":1},
+  {"url":"/assets/2.mp4","name":"Компоненты","id":2},
+  {"url":"/assets/3.mp4","name":"Привязка данных","id":3},
+  {"url":"/assets/4.mp4","name":"Директива *ngFor","id":4}
+]}
