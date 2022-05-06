@@ -1,0 +1,162 @@
+.contactUs {
+  margin: 5px;
+}
+
+.contactUsDescription {
+  float: right;
+  margin-bottom: 5px;
+}
+
+.header-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.header {
+  max-width: 100%;
+  height: 72px;
+  padding: 2px 0px;
+
+  color: white;
+  box-shadow: 5px 2px 4px 2px hsla(0, 2%, 25%, 1);;
+}
+
+.img {
+  width: 600px;
+  height: 600px;
+}
+
+.footer {
+  max-width: 100%;
+  height: 70px;
+  text-align: center;
+  padding: 16px 0px;
+  font-family: "Libre Bodoni";
+  font-size: 18px;
+  margin-top: 40px;
+  color: white;
+  box-shadow: 4px 2px 5px 2px hsla(0, 2%, 25%, 1);;
+}
+
+.footer p {
+  font-size: 16px;
+}
+
+.description {
+  background-color: #212121;;
+  max-width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  display: flex;
+  margin: 6px 0 40px 0;
+}
+
+.description p {
+  width: 100%;
+  background-color: #212121;;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px;
+}
+
+.aboutUs {
+  padding-bottom: 80px;
+}
+.aboutUs p{
+  font-family: 'Comfortaa', cursive;
+  font-size: 18px;
+}
+//.content {
+//  display: flex;
+//  justify-content: space-between;
+//}
+
+.main {
+  background-color: hsla(0, 0%, 8%, 1);;
+}
+
+.video-content {
+  padding: 0 40px 15px 10px;
+}
+
+.btn {
+  width: 110px;
+  height: 28px;
+  text-decoration: none;
+  color: #6b5770;
+  background-image: linear-gradient(90deg, #fd7f34, #bd155b);
+  display: none;
+  border: 1px solid;
+  position: relative;
+  z-index: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 5px 15px 15px 0;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+}
+
+.btn:before {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: linear-gradient(90deg, #fd7f34, #bd155b);
+  z-index: -2;
+  transition: .4s;
+  border-radius: 5px;
+}
+span{
+  color: #fd7f34 ;
+}
+@media (max-width: 770px) and (min-width: 200px) {
+  .footer p {
+    font-size: 10px;
+  }
+  .img {
+    display: none;
+  }
+  .aboutUs{
+    font-size: 12px;
+    padding: 30px 0 0 0 ;
+  }
+  .aboutUs p{
+    font-size: 10px;
+  }
+  .h1{
+    font-size: 14px;
+  }
+  .about{
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 680px) {
+  .img {
+    width: 300px;
+    height: 300px;
+  }
+  .aboutUs{
+    padding: 60px 0 0 0 ;
+  }
+  .aboutUs p{
+    font-size: 14px;
+  }
+  .h1{
+    font-size: 14px;
+  }
+  .about{
+    padding: 50px;
+  }
+}

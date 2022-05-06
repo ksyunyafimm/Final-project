@@ -1,0 +1,12 @@
+<div class="elementsPosition">
+  <div ><p class="close-btn" (click)="onClickCloseButton()"><i class="fa-solid fa-circle-xmark"></i></p></div>
+  <div class="comments">
+    <ul>
+      <p class="text">Комментарии:</p>
+      <li *ngFor="let item of commentMap">
+        <p class="commentsInner"><i class="fa-solid fa-person-drowning"></i>
+          <b>{{item?.name}}</b> <br>"{{item?.comment}}"</p>
+      </li>
+    </ul>
+  </div>
+</div>
